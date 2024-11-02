@@ -1,9 +1,5 @@
-Email for strapi is => osama.oda7995@gmail.com
+Email for strapi is => admin@admin.com
 Password for strapi is => Admin123
-
-cloudinary dashboard:
-https://console.cloudinary.com/pm/c-71887ed7b3f456ddad53895ec3b31b/developer-dashboard
-
 
 
 Description :

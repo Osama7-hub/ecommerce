@@ -1,0 +1,10 @@
+Email for strapi is => osama.oda7995@gmail.com
+Password for strapi is => Admin123
+
+cloudinary dashboard:
+https://console.cloudinary.com/pm/c-71887ed7b3f456ddad53895ec3b31b/developer-dashboard
+
+
+
+Description :
+Our project, E Store, is an ambitious venture in the Fashion & Apparel sector, driven by a skilled team of 20 to 100 professionals in Qatar. We are developing a state-of-the-art ecommerce website designed to revolutionize the online shopping experience. E Store will offer a diverse range of stylish and high-quality clothing and accessories, catering to the tastes and preferences of a broad audience. Our platform aims to seamlessly merge fashion and technology, providing an intuitive and engaging user experience. We are committed to delivering exceptional customer service, fast shipping, and a secure shopping environment. E Store is poised to become the ultimate online destination for fashion enthusiasts in Qatar and beyond.

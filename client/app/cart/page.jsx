@@ -51,8 +51,8 @@ function Cart() {
 				<div className="mt-8">
 					<ul className="space-y-4">
 						{cart?.map((item) => (
-							<div className='flex items-center w-full'>
-								<li key={item?.id} className="flex items-center gap-4 border-t-2 dark:border-gray-700 py-4 w-full">
+							<div className='flex items-center w-full' key={item?.id}>
+								<li className="flex items-center gap-4 border-t-2 dark:border-gray-700 py-4 w-full">
 									<Image
 										src={item?.product?.attributes?.banner?.data[0]?.attributes?.url}
 										alt="Product-cart-details"

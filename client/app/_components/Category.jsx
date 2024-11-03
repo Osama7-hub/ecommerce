@@ -1,11 +1,12 @@
 import React from 'react'
 // import { Button } from "@material-tailwind/react";
 import Link from 'next/link'
+import Image from 'next/image';
 
 const cats = [
-    { category: "Women", text: "Spring 2024", link: "./images/banner-01.jpg" },
-    { category: "Man", text: "Spring 2024", link: ".//images/banner-02.jpg" },
-    { category: "Accessories", text: "New Trend", link: ".//images/banner-03.jpg" }
+    { category: "Women", text: "Spring 2024", link: "images/banner-01.jpg" },
+    { category: "Man", text: "Spring 2024", link: "./images/banner-02.jpg" },
+    { category: "Accessories", text: "New Trend", link: "./images/banner-03.jpg" }
 ];
 
 function Category() {
@@ -16,10 +17,12 @@ function Category() {
                     cats.map((item) => {
                         return (
                             <a href="#" className="group relative block border-2 bg-primary" key={item.link}>
-                                <img
-                                    src={item.link}
+                                <Image
+                                    src={"/" + item.link}
                                     className="absolute inset-0 h-full w-full object-cover opacity-100 transition-opacity group-hover:opacity-50"
                                     alt="categories banner"
+                                    width={300}
+                                    height={300}
                                 />
                                 <div className="relative p-4 sm:p-6 lg:p-8">
                                     <p className="text-2xl font-medium uppercase tracking-widest text-primary">{item.category}</p>

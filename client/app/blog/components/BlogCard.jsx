@@ -10,6 +10,7 @@ import {
     Tooltip,
 } from "@material-tailwind/react";
 import { ArrowLeftIcon, ArrowRightIcon } from 'lucide-react';
+import Image from 'next/image';
 
 function BlogCard({src, subject, content, day, date}) {
     return (
@@ -20,7 +21,7 @@ function BlogCard({src, subject, content, day, date}) {
                 color="transparent"
                 className="m-0 rounded-none relative"
             >
-                <img src={src} alt="blog-image" className='hover:scale-110 transition-all duration-500' />
+                <Image src={"/" + src} alt="blog-image" className='hover:scale-110 transition-all duration-500 w-full h-full' width={500} height={500} />
                 <div className='date flex flex-col items-center justify-center gap-1 bg-[#ffffff7a] absolute top-[15px] left-[10px] w-[70px] min-h-[70px]'>
                     <span className='text-[30px] leading-4 text-center text-[#333]'>{day}</span>
                     <span className='text-[12px] leading-7 text-center text-[#666]'>{date}</span>

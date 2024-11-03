@@ -15,6 +15,7 @@ function ProductDetails({ params }) {
 	useEffect(() => {
 		getProductById_();
 	}, [params?.productId]);
+
 	const getProductById_ = () => {
 		ProductApis.getProductById(params?.productId).then((res) => {
 			// console.log("product item ", res.data.data);
@@ -22,6 +23,7 @@ function ProductDetails({ params }) {
 			getProductListByCategory(res.data.data);
 		});
 	};
+
 	const getProductListByCategory = (product) => {
 		ProductApis.getProductsByCategory(product?.attributes.category).then(
 			(res) => {

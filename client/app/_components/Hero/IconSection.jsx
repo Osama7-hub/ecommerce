@@ -6,6 +6,7 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
+import Image from 'next/image';
 
 const myContent = [
   { text: "NEW ARRIVALS", link: "./images/banner-15.jpg" },
@@ -17,8 +18,8 @@ function IconSection() {
   {
     myContent.map((item) => {
       return (
-        <div className='relative'>
-          <img src={item.link} alt="" className='w-[100%]' />
+        <div className='relative' key={item.link}>
+          <Image src={item.link} alt={item.text} className='w-[100%]' width={300} height={300} />
           <Card className="w-1/2 h-1/2 absolute top-1 left-1 bg-transparent border-none shadow-none text-left">
             <CardBody>
               <Typography variant="h5" color="blue-gray" className="mb-2 text-[#222] uppercase text-2xl font-normal">

@@ -4,11 +4,11 @@ import HeroPage from '../_components/HeroPage'
 import BlogCard from './components/BlogCard'
 import { Card, Chip, Input, List, ListItem, ListItemPrefix, ListItemSuffix, Typography } from '@material-tailwind/react'
 import { Search } from 'lucide-react';
+import Image from 'next/image';
 
 function Blog() {
   return (
     <div>
-      {/* <HeroPage title={"Blog"} bg={"/_next/image?url=%2F.%2Fimages%2Fabout-bg.jpg&w=3840&q=75"}/> */}
       <HeroPage title={"Blog"} />
       <div className="container mx-auto">
         <div className="grid grid-cols-1 gap-4 xl:grid-cols-3 lg:gap-8 mt-10">
@@ -18,7 +18,7 @@ function Blog() {
               subject={"8 Inspiring Ways to Wear Dresses in the Winter"}
               content={"Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius"}
               day={22}
-              date={"Jan 2018"}
+              date={"Jan 2018"} 
             />
             <BlogCard
               src={"./images/blog-02.jpg"}
@@ -60,7 +60,7 @@ function Blog() {
                 <List>
                   <ListItem>
                     <ListItemPrefix>
-                      <img src="./images/product-min-01.jpg" alt="PRODUCT" />
+                      <Image src="/./images/product-min-01.jpg" alt="PRODUCT" className="w-full h-full" width={300} height={300} />
                     </ListItemPrefix>
                     <div>
                       <Typography variant="h6" color="blue-gray">White Shirt With Pleat Detail Back</Typography>
@@ -69,7 +69,7 @@ function Blog() {
                   </ListItem>
                   <ListItem>
                     <ListItemPrefix>
-                      <img src="./images/product-min-02.jpg" alt="PRODUCT" />
+                      <Image src="/./images/product-min-02.jpg" alt="PRODUCT" className="w-full h-full" width={300} height={300} />
                     </ListItemPrefix>
                     <div>
                       <Typography variant="h6" color="blue-gray">Converse All Star Hi Black Canvas</Typography>
@@ -78,7 +78,7 @@ function Blog() {
                   </ListItem>
                   <ListItem>
                     <ListItemPrefix>
-                      <img src="./images/product-min-03.jpg" alt="PRODUCT" />
+                      <Image src="/./images/product-min-03.jpg" alt="PRODUCT" className="w-full h-full" width={300} height={300} />
                     </ListItemPrefix>
                     <div>
                       <Typography variant="h6" color="blue-gray">Nixon Porter Leather Watch In Tan</Typography>
@@ -195,8 +195,8 @@ function Blog() {
                 <Chip variant="outlined" value="Crafts" className='uppercase w-fit' />
               </div>
             </div>
-
           </div>
+
         </div>
       </div>
     </div>
